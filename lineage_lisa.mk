@@ -17,7 +17,7 @@ RICE_BOOTANIMATION := 1080
 RICE_CHIPSET := "Snapdragon 778G"
 RICE_MAINTAINER := "DarknessKiller"
 TARGET_ENABLE_BLUR := true
-WITH_GMS := true
+WITH_GMS := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_lisa
