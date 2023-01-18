@@ -12,11 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
 # Inherit some common Arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+RICE_BOOTANIMATION := 1080
+RICE_CHIPSET := "Snapdragon 778G"
+RICE_MAINTAINER := "DarknessKiller"
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_lisa
+PRODUCT_NAME := lineage_lisa
 PRODUCT_DEVICE := lisa
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi 11 Lite NE
