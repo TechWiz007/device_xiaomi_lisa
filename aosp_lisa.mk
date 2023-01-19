@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 PixelExperience
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,16 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lisa device
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
-# Inherit some common Arrow stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-RICE_BOOTANIMATION := 1080
-RICE_CHIPSET := "Snapdragon 778G"
-RICE_MAINTAINER := "DarknessKiller"
-TARGET_ENABLE_BLUR := true
-WITH_GMS := false
+# Inherit some common stuff from PixelExperience.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_USES_AOSP_RECOVERY := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_lisa
+PRODUCT_NAME := aosp_lisa
 PRODUCT_DEVICE := lisa
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi 11 Lite NE
