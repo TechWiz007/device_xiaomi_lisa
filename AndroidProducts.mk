@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mia_lisa.mk
+    $(LOCAL_DIR)/bootleg_lisa.mk
 
 COMMON_LUNCH_CHOICES := \
-    mia_lisa-user \
-    mia_lisa-userdebug \
-    mia_lisa-eng
+    bootleg_lisa-user \
+    bootleg_lisa-userdebug \
+    bootleg_lisa-eng
