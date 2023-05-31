@@ -20,6 +20,7 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_USES_AOSP_CHARGER := true
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+BOOTLEGGERS_BUILD_TYPE := Unshishufied
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := bootleg_lisa
